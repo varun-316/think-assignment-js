@@ -1,6 +1,6 @@
 export function getGovtForm(){
 
-    const br = document.createElement("br");
+     
 
     const steps = document.createElement("p");
     steps.innerHTML = "Step 2 of 3";
@@ -32,9 +32,9 @@ export function getGovtForm(){
 
     form.appendChild(steps);
     form.appendChild(aadhar);
-    form.appendChild(br.cloneNode());
+     
     form.appendChild(pan);
-    form.appendChild(br.cloneNode());
+     
     form.appendChild(back);
     form.appendChild(submit);    
 

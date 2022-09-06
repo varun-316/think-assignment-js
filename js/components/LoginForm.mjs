@@ -1,7 +1,4 @@
 export function getLoginInfo(){
-
-    const br = document.createElement("br");
-
     const form = document.createElement("form");
     form.setAttribute("method","post");
 
@@ -20,9 +17,7 @@ export function getLoginInfo(){
     submit.setAttribute("value","Next");
 
     form.appendChild(uname);
-    form.appendChild(br.cloneNode());
     form.appendChild(pass);
-    form.appendChild(br.cloneNode());
     form.appendChild(submit);
 
     document.getElementById("root").appendChild(form);

@@ -1,6 +1,6 @@
 export function getPersonalDetails(){
 
-    const br = document.createElement("br");
+     
 
     const steps = document.createElement("p");
     steps.innerHTML = "Step 1 of 3";
@@ -35,14 +35,10 @@ export function getPersonalDetails(){
     submit.setAttribute("value","Next");
 
     form.appendChild(steps);
-    form.appendChild(fname);
-    form.appendChild(br.cloneNode());
-    form.appendChild(lname);
-    form.appendChild(br.cloneNode());
-    form.appendChild(contact);
-    form.appendChild(br.cloneNode());
-    form.appendChild(email);
-    form.appendChild(br.cloneNode());
+    form.appendChild(fname);     
+    form.appendChild(lname);     
+    form.appendChild(contact);     
+    form.appendChild(email);     
     form.appendChild(submit);    
 
     document.getElementById("root").appendChild(form);
