@@ -23,7 +23,7 @@ export function getPersonalDetails(){
     contact.setAttribute("type","text");
     contact.setAttribute("name","contact");
     contact.setAttribute("maxlength","10");
-    contact.setAttribute("placeholder","Contact Details");
+    contact.setAttribute("placeholder","Contact Number");
 
     const email = document.createElement("input");
     email.setAttribute("type","email");
