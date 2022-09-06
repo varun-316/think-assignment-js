@@ -1,9 +1,9 @@
-import { addHeader } from "./components.mjs";
-import { getPersonalDetails } from "./PersonalForm.mjs";
-import { getGovtForm } from "./GovtForm.mjs";
+import { addHeader } from "./components/Header.mjs";
+import { getPersonalDetails } from "./components/PersonalForm.mjs";
+import { getGovtForm } from "./components/GovtForm.mjs";
 
 window.onload = () => {
     addHeader();
-    getPersonalDetails();
-    getGovtForm();
+    // getPersonalDetails();
+    // getGovtForm();
 }
