@@ -5,10 +5,37 @@
 }
 
 #root {
-
+    
 }
 
 #header {
     height: 7.5vmin;
     background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#login-status {
+    display: flex;
+    align-items: center;
+}
+
+#login-status > * {
+    margin: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    min-width: 33vw;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+form > * {
+    margin: 5px;
 }
