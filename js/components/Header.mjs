@@ -5,14 +5,35 @@ export const addHeader = () => {
     headerDiv.setAttribute("id", "header");
     root.appendChild(headerDiv);
     addHeading();
-    addLoginButton();    
+    addStatus();
 }
 
-const addLoginButton = () => {
+const addStatus = () => {
+    const USER = "Varun";
+    window.sessionStorage.setItem("username", USER);
+    const uname = window.sessionStorage.getItem("username");
+    const statusDiv = document.createElement("div");
+    statusDiv.setAttribute("id", "login-status");
+    document.getElementById("header").appendChild(statusDiv);
+    if(uname) {
+        addUsername(uname);
+        addButton(true);
+    } else {
+        addButton(false);
+    }
+}
+
+const addUsername = (uname) => {
+    const username = document.createElement("h3");
+    username.innerHTML = uname;
+    document.getElementById("login-status").appendChild(username);
+}
+
+const addButton = (loginFlag) => {    
     const loginbtn = document.createElement("button");
     loginbtn.setAttribute("id", "login-button");
-    loginbtn.innerHTML = "Login";
-    document.getElementById("header").appendChild(loginbtn);
+    loginbtn.innerHTML = loginFlag ? "Logout" : "Login";
+    document.getElementById("login-status").appendChild(loginbtn);
 }
 
 const addHeading = () => {
