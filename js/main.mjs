@@ -1,5 +1,4 @@
 import { addHeader } from "./components/Header.mjs";
-import { getLoginInfo } from "./components/LoginForm.mjs";
 import { getPersonalDetails } from "./components/PersonalForm.mjs";
 import { getGovtForm } from "./components/GovtForm.mjs";
 import { getLoginInfo } from "./components/LoginForm.mjs";
