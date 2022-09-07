@@ -9,8 +9,6 @@ export const addHeader = () => {
 }
 
 const addStatus = () => {
-    const USER = "Varun";
-    window.sessionStorage.setItem("username", USER);
     const uname = window.sessionStorage.getItem("username");
     const statusDiv = document.createElement("div");
     statusDiv.setAttribute("id", "login-status");
@@ -33,6 +31,15 @@ const addButton = (loginFlag) => {
     const loginbtn = document.createElement("button");
     loginbtn.setAttribute("id", "login-button");
     loginbtn.innerHTML = loginFlag ? "Logout" : "Login";
+    loginbtn.onclick = () => {
+        if(!loginFlag) {
+            window.sessionStorage.setItem("stage", 0);
+            window.location.reload();
+        } else {
+            window.sessionStorage.clear();
+            window.location.reload();
+        }
+    }
     document.getElementById("login-status").appendChild(loginbtn);
 }
 
