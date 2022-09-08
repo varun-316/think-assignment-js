@@ -23,7 +23,8 @@ const addStatus = () => {
 
 const addUsername = (uname) => {
     const username = document.createElement("h3");
-    username.innerHTML = uname;
+    username.setAttribute("id","welcome-msg")
+    username.innerHTML = "Welcome " +uname;
     document.getElementById("login-status").appendChild(username);
 }
 

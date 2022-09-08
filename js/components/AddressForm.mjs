@@ -1,5 +1,6 @@
 export function getAddressDetails(){
     const steps = document.createElement("p");
+    steps.setAttribute("id","step");
     steps.innerHTML = "Step 3 of 3";
 
     const form = document.createElement("form");

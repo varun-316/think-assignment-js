@@ -3,6 +3,7 @@ export function getGovtForm(){
      
 
     const steps = document.createElement("p");
+    steps.setAttribute("id","step");
     steps.innerHTML = "Step 2 of 3";
 
     const form = document.createElement("form");
@@ -24,7 +25,7 @@ export function getGovtForm(){
     const back = document.createElement("input");
     back.setAttribute("type","button");
     back.setAttribute("value","Back");
-    back.setAttribute("action","PersonalForm.mjs");
+    back.setAttribute("id","back")
 
     const submit = document.createElement("input");
     submit.setAttribute("type","submit");
@@ -32,9 +33,7 @@ export function getGovtForm(){
 
     form.appendChild(steps);
     form.appendChild(aadhar);
-     
     form.appendChild(pan);
-     
     form.appendChild(back);
     form.appendChild(submit);    
 

@@ -2,7 +2,6 @@ export function getLoginInfo(){
     const form = document.createElement("form");
     // form.setAttribute("method", "post");
 
-
     const uname = document.createElement("input");
     uname.setAttribute("type","text");
     uname.setAttribute("name","uname");
@@ -24,8 +23,6 @@ export function getLoginInfo(){
     form.appendChild(uname);
     form.appendChild(pass);
     form.appendChild(submit);
-
-    
 
     document.getElementById("root").appendChild(form);
 

@@ -3,6 +3,7 @@ export function getPersonalDetails(){
      
 
     const steps = document.createElement("p");
+    steps.setAttribute("id","step");
     steps.innerHTML = "Step 1 of 3";
 
     const form = document.createElement("form");
